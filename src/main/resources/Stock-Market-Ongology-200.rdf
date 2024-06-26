@@ -1,0 +1,1802 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#"
+     xml:base="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:smo="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology/2.0.0"/>
+        <rdfs:comment>Ontologia sobre o mercado de ações.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#atuaEm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#atuaEm">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Empresa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Setor_Atuacao"/>
+        <rdfs:comment>Propriedade que indica que uma empresa atua em um determinado setor econômico.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#defineIndicador -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#defineIndicador">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bolsa_de_Valores"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Indice"/>
+        <rdfs:comment>Propriedade que indica que uma bolsa de valores define um conjunto terórico de valores mobiliários.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#eListada -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#eListada">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Empresa_Capital_Aberto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bolsa_de_Valores"/>
+        <rdfs:comment>Propriedade que indica que os valores mobiliários de uma empresa de capital aberto podem ser negociados em uma determinada bolsa de valores.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#negociado -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#negociado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Valor_Mobiliario_Negociado"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Pregao"/>
+        <rdfs:comment>Propriedade que indica que a negociação de valor mobiliário ocorre em um determinado pregão.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#negociadoDurante -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#negociadoDurante">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Pregao"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Pregao"/>
+        <rdfs:comment>Pregão no qual os valores mobiliários foram negociados.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#negociadoPregoes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#negociadoPregoes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Valor_Mobiliario_Negociado"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Diferentes_Pregoes"/>
+        <rdfs:comment>Propriedade que indica que a negociação de um mesmo valor mobiliário ocorre em diferentes pregões.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#organiza -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#organiza">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bolsa_de_Valores"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Pregao"/>
+        <rdfs:comment>Propriedade que indica que uma bolsa de valores organiza pregão para a negociação de valores mobiliários.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#pregaoBase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#pregaoBase">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Diferentes_Pregoes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Pregao"/>
+        <rdfs:comment>Propriedade que indica o pregão base da negociação de um mesmo valor mobiliário ocorrida em diferentes pregões.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#pregaoPosterior -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#pregaoPosterior">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Diferentes_Pregoes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Pregao"/>
+        <rdfs:comment>Propriedade que indica o pregão posterior da negociação de um mesmo valor mobiliário ocorrida em diferentes pregões.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#representaConjuntoDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#representaConjuntoDe">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Certificado_de_Deposito_de_Acoes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Acao"/>
+        <rdfs:comment>Propriedade que indica que um certificado de depósito de ações representa um certo número de ações de uma empresa listada na bolsa de valores.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#representadoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#representadoPor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Valor_Mobiliario_Negociado"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Codigo_Negociacao"/>
+        <rdfs:comment>Propriedade que indica que um determinado valor mobiliário negociado em um pregão é representado por um código de negociação.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#temIdentificacao -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#temIdentificacao">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Valor_Mobiliario"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Codigo_Negociacao"/>
+        <rdfs:comment>Propriedade que indica que um valor mobiliário é identificado por um código de negociação.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#temValorMobiliarioNegociado -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#temValorMobiliarioNegociado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Empresa_Capital_Aberto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Valor_Mobiliario_Negociado"/>
+        <rdfs:comment>Relacionamento que indica que uma empresa de capital aberto tem suas ações e outros valores mobiliários negociados em uma bolsa de valores.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#horarioAbertura -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#horarioAbertura">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Pregao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Horário de abertura de um pregão.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#horarioFechamento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#horarioFechamento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Pregao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Horário de fechamento de um pregão.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#intervaloIntradiarioAbsoluto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#intervaloIntradiarioAbsoluto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Pregao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Variação intradiária entre os preços máximo e mínimo de um valor mobiliário negociado em um pregão.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#intervaloIntradiarioPercentual -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#intervaloIntradiarioPercentual">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Pregao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Variação intradiária percentual ou relativa entre os preços máximo e mínimo de um valor mobiliário negociado em um pregão.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#ocorreEmData -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#ocorreEmData">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Pregao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Data na qual um pregão ocorre.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#precoAbertura -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#precoAbertura">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Pregao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Preço utilizado como base para o início das negociações do valor mobiliário no pregão.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#precoFechamento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#precoFechamento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Pregao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Preço do valor mobiliário associado ao último negógio no pregão.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#precoMaximo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#precoMaximo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Pregao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Maior preço negociado pelo valor mobiliário no pregão.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#precoMedio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#precoMedio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Pregao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment>Preço médio negociado pelo valor mobilário no pregão.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#precoMinimo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#precoMinimo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Pregao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Menor preço negociado pelo valor mobilário no pregão.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#ticker -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#ticker">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Codigo_Negociacao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#token"/>
+        <rdfs:comment>Conjunto de letras e/ou números que identifica um valor mobiliário negociado em uma bolsa de valores.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#totalNegocios -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#totalNegocios">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Pregao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment>Quantidade total de negócios associados ao valor mobiliário no pregão.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#totalTitulosNegociados -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#totalTitulosNegociados">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Pregao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+        <rdfs:comment>Quantidade total de títulos do valor mobiliários negociados no pregão.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#variacaoAbsoluta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#variacaoAbsoluta">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Diferentes_Pregoes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Variação absoluta no preço de um valor mobiliário negociado em diferentes pregões.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#variacaoIntradiariaAbsoluta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#variacaoIntradiariaAbsoluta">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Pregao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Variação absoluta no preço de um valor mobiliário negociado, ocorrida durante um mesmo pregão.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#variacaoIntradiariaPercentual -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#variacaoIntradiariaPercentual">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Pregao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Variação percentual ou relativa no preço de um valor mobiliário negociado, ocorrida durante um mesmo pregão.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#variacaoPercentual -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#variacaoPercentual">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Diferentes_Pregoes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Variação percentual ou relativa no preço de um valor mobiliário negociado em diferentes pregões.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#volumeNegociacao -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#volumeNegociacao">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Pregao"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Volume total do valor mobiliário negociado durante o pregão.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Acao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Acao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Valor_Mobiliario"/>
+        <rdfs:comment>Título que representa parte do capital de uma empresa.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Acessorios -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Acessorios">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Tecidos._Vestuarios_e_Calcados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Acucar_e_Alcool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Acucar_e_Alcool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Alimentos_Processados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Aereo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Aereo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Transporte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Agricultura -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Agricultura">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Agropecuaria"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Agropecuaria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Agropecuaria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Nao_Ciclico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Agua_e_Saneamento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Agua_e_Saneamento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Utilidade_Publica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Alimentos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Alimentos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio_e_Distribuicao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Alimentos_Diversos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Alimentos_Diversos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Alimentos_Processados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Alimentos_Processados -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Alimentos_Processados">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Nao_Ciclico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Aluguel_de_Carros -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Aluguel_de_Carros">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Diversos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Armas_e_Municoes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Armas_e_Municoes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Maquinas_e_Equipamentos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Artefatos_de_Cobre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Artefatos_de_Cobre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Siderurgia_e_Metalurgia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Artefatos_de_Ferro_e_Aco -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Artefatos_de_Ferro_e_Aco">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Siderurgia_e_Metalurgia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Atividades_Esportivas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Atividades_Esportivas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Viagens_e_Lazer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Automoveis_e_Motocicletas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Automoveis_e_Motocicletas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Ciclico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bancos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bancos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Intermediarios_Financeiros"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bebidas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bebidas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Nao_Ciclico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bens_Industriais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bens_Industriais">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Setor_Atuacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bicicletas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bicicletas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Viagens_e_Lazer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bolsa_de_Valores -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bolsa_de_Valores">
+        <rdfs:comment>Ambiente organizado de negociações de valores mobiliários.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Brazilian_Depositary_Receipt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Brazilian_Depositary_Receipt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Valor_Mobiliario"/>
+        <rdfs:comment>Certificado de depósito de ações emitido no Brasil que representam ações de empresas estrangeiras sem registro no Brasil.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Brinquedos_e_Jogos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Brinquedos_e_Jogos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Viagens_e_Lazer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Calcados -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Calcados">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Tecidos._Vestuarios_e_Calcados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Carnes_e_Derivados -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Carnes_e_Derivados">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Alimentos_Processados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Certificado_de_Deposito_de_Acoes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Certificado_de_Deposito_de_Acoes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Valor_Mobiliario"/>
+        <rdfs:comment>Instrumento financeiro que representa a propriedade de um conjunto de ações ordinárias e/ou preferenciais de uma empresa.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Cervejas_e_Refrigerantes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Cervejas_e_Refrigerantes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bebidas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Classe_A -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Classe_A">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Preferencial"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Classe_B"/>
+        <rdfs:comment>Ação cujo acionista recebe um mínimo de dividendos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Classe_B -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Classe_B">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Preferencial"/>
+        <rdfs:comment>Ação cujo acionista recebe um valor pré-definido de dividendo.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Codigo_Negociacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Codigo_Negociacao">
+        <rdfs:comment>Símbolo que identifica o título de valor mobiliário.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Ciclico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio_de_Eletrodomesticos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio_de_Eletrodomesticos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio_de_Materiais_de_Transporte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio_de_Materiais_de_Transporte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bens_Industriais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio_e_Distribuicao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio_e_Distribuicao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Nao_Ciclico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio_e_Distribuicao_de_Medicamentos_e_Outros_Produtos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio_e_Distribuicao_de_Medicamentos_e_Outros_Produtos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Saude"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Computadores_e_Equipamentos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Computadores_e_Equipamentos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Tecnologia_da_Informacao"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Programas_e_Servicos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comunicacoes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comunicacoes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Setor_Atuacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Construcao_Civil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Construcao_Civil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Ciclico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Construcao_Pesada -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Construcao_Pesada">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Construcao_e_Engenharia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Construcao_e_Agriculas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Construcao_e_Agriculas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Maquinas_e_Equipamentos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Construcao_e_Engenharia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Construcao_e_Engenharia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bens_Industriais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Ciclico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Ciclico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Setor_Atuacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Nao_Ciclico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Nao_Ciclico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Setor_Atuacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Corretoras_de_Seguros_e_Resseguros -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Corretoras_de_Seguros_e_Resseguros">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Previdencia_e_Seguros"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Debenture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Debenture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Valor_Mobiliario"/>
+        <rdfs:comment>Título de dívida emitido por uma empresa que oferece direito de crédito a um investidor junto à empresa.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Diversos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Diversos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Ciclico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Eletrodomesticos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Eletrodomesticos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Utilidades_Domesticas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Embalagens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Embalagens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Materiais_Basicos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Empresa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Empresa">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#atuaEm"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Setor_Atuacao"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Organização econômica que explora um ramo de negócio e oferece ao mercado bens e/ou serviços.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Empresa_Capital_Aberto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Empresa_Capital_Aberto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Empresa"/>
+        <rdfs:comment>Empresa cujo capital social é constituído por ações que podem ser negociadas em uma bolsa de valores.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Energia_Eletrica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Energia_Eletrica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Utilidade_Publica"/>
+        <rdfs:comment>Indice que representa empresas que atuam no setor de energia eletrica.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Engenharia_Consultiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Engenharia_Consultiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Construcao_e_Engenharia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Equipamentos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Equipamentos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Saude"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Equipamentos_e_Servicos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Equipamentos_e_Servicos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Petroleo_Gas_e_Biocombustivel"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Exploracao._Refino_e_Distribuicao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Exploracao._Refino_e_Distribuicao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Exploracao._Refino_e_Distribuicao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Petroleo_Gas_e_Biocombustivel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Exploracao_de_Imoveis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Exploracao_de_Imoveis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Financeiro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Exploracao_de_Rodovias -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Exploracao_de_Rodovias">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Transporte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Ferroviario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Ferroviario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Transporte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Fertilizantes_e_Defensivos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Fertilizantes_e_Defensivos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Quimico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Financeiro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Financeiro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Setor_Atuacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Fios_e_Tecidos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Fios_e_Tecidos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Tecidos._Vestuarios_e_Calcados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Gas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Gas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Utilidade_Publica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Gestao_de_Recursos_e_Investimentos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Gestao_de_Recursos_e_Investimentos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Servicos_Financeiros_Diversos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Hidroviario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Hidroviario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Transporte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Holdings_Diversificadas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Holdings_Diversificadas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Financeiro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Hoteis_e_Restaurantes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Hoteis_e_Restaurantes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Ciclico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Hotelaria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Hotelaria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Hoteis_e_Restaurantes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Restaurante_e_Similares"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Incorporacoes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Incorporacoes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Construcao_Civil"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Indice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Indice">
+        <rdfs:comment>Indicador formado por um conjunto teorico de valores mobiliarios que reflete o desempenho de um conjunto de ativos relacionados.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Indice_Amplo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Indice_Amplo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Indice"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Indice_Setorial"/>
+        <rdfs:comment>Indice que engloba um grande conjunto teorico de valores mobiliarios de diferentes setores.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Indice_Setorial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Indice_Setorial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Indice"/>
+        <rdfs:comment>Indice que engloba um conjunto teorico de valores mobiliarios de um determinado setor.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Industriais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Industriais">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Maquinas_e_Equipamentos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Intermediacao_Imobiliaria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Intermediacao_Imobiliaria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Exploracao_de_Imoveis"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Intermediarios_Financeiros -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Intermediarios_Financeiros">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Financeiro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Laticinios -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Laticinios">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Alimentos_Processados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Madeira -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Madeira">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Madeira_e_Papel"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Papel_e_Celulose"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Madeira_e_Papel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Madeira_e_Papel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Materiais_Basicos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Maquinas_e_Equipamentos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Maquinas_e_Equipamentos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bens_Industriais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Materiais_Basicos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Materiais_Basicos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Setor_Atuacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Materiais_Diversos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Materiais_Diversos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Materiais_Basicos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Material_Aeronautico_e_de_Defesa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Material_Aeronautico_e_de_Defesa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Material_de_Transporte"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Material_Rodoviario"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Material_Rodoviario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Material_Rodoviario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Material_de_Transporte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Material_de_Transporte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Material_de_Transporte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bens_Industriais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Medicamentos_e_Outros_Produtos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Medicamentos_e_Outros_Produtos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Saude"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Midia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Midia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comunicacoes"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Telecomunicacoes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Mineracao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Mineracao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Materiais_Basicos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Minerais_Metalicos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Minerais_Metalicos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Mineracao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Motores_Compressores_e_Outros -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Motores_Compressores_e_Outros">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Maquinas_e_Equipamentos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Moveis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Moveis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Utilidades_Domesticas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Diferentes_Pregoes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Diferentes_Pregoes">
+        <rdfs:comment>Entidade que representa a negociacao de um mesmo dado valor mobiliário em diferentes pregões.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Pregao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Negociado_Em_Pregao">
+        <rdfs:comment>Entidade que representa a negociação de um dado valor mobiliário em um pregão.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Ordinaria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Ordinaria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Acao"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Preferencial"/>
+        <rdfs:comment>Ação que garante direito de voto ao acionista.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Outros -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Outros">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Setor_Atuacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Papel_e_Celulose -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Papel_e_Celulose">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Madeira_e_Papel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Petroleo_Gas_e_Biocombustivel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Petroleo_Gas_e_Biocombustivel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Setor_Atuacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Petroquimicos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Petroquimicos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Quimico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Preferencial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Preferencial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Acao"/>
+        <rdfs:comment>Ação que indica a preferência ao recebimento de valores pelo acionista.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Pregao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Pregao">
+        <rdfs:comment>Periodo do dia no qual acontecem as negociacoes de valores mobiliarios.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Previdencia_e_Seguros -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Previdencia_e_Seguros">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Financeiro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Producao_de_Eventos_e_Shows -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Producao_de_Eventos_e_Shows">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Viagens_e_Lazer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Producao_e_Difusao_de_Filmes_e_Programas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Producao_e_Difusao_de_Filmes_e_Programas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Midia"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Publicidade_e_Propaganda"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Produtos_Diversos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Produtos_Diversos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Produtos_de_Limpeza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Produtos_de_Limpeza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Produtos_de_Uso_Pessoal_e_de_Limpeza"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Produtos_de_Uso_Pessoal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Produtos_de_Uso_Pessoal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Produtos_de_Uso_Pessoal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Produtos_de_Uso_Pessoal_e_de_Limpeza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Produtos_de_Uso_Pessoal_e_de_Limpeza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Produtos_de_Uso_Pessoal_e_de_Limpeza">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Nao_Ciclico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Produtos_para_Construcao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Produtos_para_Construcao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Construcao_e_Engenharia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Programas_de_Fidelizacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Programas_de_Fidelizacao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Diversos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Programas_e_Servicos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Programas_e_Servicos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Tecnologia_da_Informacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Publicidade_e_Propaganda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Publicidade_e_Propaganda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Midia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Quimico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Quimico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Materiais_Basicos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Quimicos_Diversos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Quimicos_Diversos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Quimico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Resseguradoras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Resseguradoras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Previdencia_e_Seguros"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Restaurante_e_Similares -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Restaurante_e_Similares">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Hoteis_e_Restaurantes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Rodoviario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Rodoviario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Transporte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Saude -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Saude">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Setor_Atuacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Securitizadoras_de_Recebiveis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Securitizadoras_de_Recebiveis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Financeiro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Seguradoras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Seguradoras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Previdencia_e_Seguros"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Servicos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Servicos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bens_Industriais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Servicos_Diversos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Servicos_Diversos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Servicos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Servicos_Educacionais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Servicos_Educacionais">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Diversos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Servicos_Financeiros_Diversos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Servicos_Financeiros_Diversos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Financeiro"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Servicos_Medicos._Hospitalares_e_Diagnosticos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Servicos_Medicos._Hospitalares_e_Diagnosticos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Saude"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Serviços_de_Apoio_e_Armazenagem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Serviços_de_Apoio_e_Armazenagem">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Transporte"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Setor_Atuacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Setor_Atuacao">
+        <rdfs:comment>Setor econômico em que uma empresa pode atuar.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Siderurgia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Siderurgia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Siderurgia_e_Metalurgia"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Siderurgia_e_Metalurgia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Siderurgia_e_Metalurgia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Materiais_Basicos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Sociedade_de_Arrendamento_Mercantil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Sociedade_de_Arrendamento_Mercantil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Intermediarios_Financeiros"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Sociedade_de_Credito_e_Financiamento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Sociedade_de_Credito_e_Financiamento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Intermediarios_Financeiros"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Tecidos._Vestuario_e_Calcados -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Tecidos._Vestuario_e_Calcados">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Tecidos._Vestuarios_e_Calcados -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Tecidos._Vestuarios_e_Calcados">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Ciclico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Tecnologia_da_Informacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Tecnologia_da_Informacao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Setor_Atuacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Telecomunicacoes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Telecomunicacoes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comunicacoes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Transporte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Transporte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bens_Industriais"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Utensilios_Domesticos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Utensilios_Domesticos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Utilidades_Domesticas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Utilidade_Publica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Utilidade_Publica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Setor_Atuacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Utilidades_Domesticas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Utilidades_Domesticas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Ciclico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Valor_Mobiliario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Valor_Mobiliario">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#temIdentificacao"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Codigo_Negociacao"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Título ou contrato de investimento coletivo que gera direito de participação, de parceria ou remuneração, inclusive resultante da prestação de serviços, cujos rendimentos advém do esforço do empreendedor ou de terceiros.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Valor_Mobiliario_Negociado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Valor_Mobiliario_Negociado">
+        <rdfs:comment>Valor mobiliário negociado em uma bolsa de valores.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Vestuario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Vestuario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Tecidos._Vestuarios_e_Calcados"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Viagens_e_Lazer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Viagens_e_Lazer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Ciclico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Viagens_e_Turismo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Viagens_e_Turismo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Viagens_e_Lazer"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#B3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#B3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bolsa_de_Valores"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IBovespa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IBovespa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Indice_Amplo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IBrX_100"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IBrX_50"/>
+        <rdfs:comment>Indice que representa os valores mobiliarios mais importantes do mercado de acoes brasileiro.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IBrX_100 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IBrX_100">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Indice_Amplo"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IBrX_50"/>
+        <rdfs:comment>Indice que representa os 100 valores mobiliarios de maior negociabilidade e representatividade do mercado de acoes brasileiro.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IBrX_50 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IBrX_50">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Indice_Amplo"/>
+        <rdfs:comment>Indice que representa os 50 valores mobiliarios de maior negociabilidade e representatividade do mercado de acoes brasileiro.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IEE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IEE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Indice_Setorial"/>
+        <rdfs:comment>Indice que representa um conjunto de valores mobiliarios de empresas que atuam no setor eletrico.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IFNC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IFNC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Indice_Setorial"/>
+        <rdfs:comment>Indice que representa um conjunto de valores mobiliarios de empresas que atuam no setor financeiro.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IMAT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IMAT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Indice_Setorial"/>
+        <rdfs:comment>Indice que representa um conjunto de valores mobiliarios de empresas que atuam no setor de materiais basicos.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Acessorios"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Calcados"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Fios_e_Tecidos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Vestuario"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Acucar_e_Alcool"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Alimentos_Diversos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Carnes_e_Derivados"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Laticinios"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Aereo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Exploracao_de_Rodovias"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Ferroviario"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Hidroviario"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Rodoviario"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Serviços_de_Apoio_e_Armazenagem"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Agropecuaria"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Alimentos_Processados"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bebidas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio_e_Distribuicao"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Produtos_de_Uso_Pessoal_e_de_Limpeza"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Agua_e_Saneamento"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Energia_Eletrica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Gas"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Aluguel_de_Carros"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Programas_de_Fidelizacao"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Servicos_Educacionais"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Armas_e_Municoes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Construcao_e_Agriculas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Industriais"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Motores_Compressores_e_Outros"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Artefatos_de_Cobre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Artefatos_de_Ferro_e_Aco"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Siderurgia"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Atividades_Esportivas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bicicletas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Brinquedos_e_Jogos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Producao_de_Eventos_e_Shows"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Viagens_e_Turismo"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Automoveis_e_Motocicletas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Construcao_Civil"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Diversos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Hoteis_e_Restaurantes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Tecidos._Vestuarios_e_Calcados"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Utilidades_Domesticas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Viagens_e_Lazer"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bancos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Sociedade_de_Arrendamento_Mercantil"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Sociedade_de_Credito_e_Financiamento"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Bens_Industriais"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comunicacoes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Ciclico"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Consumo_Nao_Ciclico"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Financeiro"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Materiais_Basicos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Outros"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Petroleo_Gas_e_Biocombustivel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Saude"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Tecnologia_da_Informacao"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Utilidade_Publica"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio_de_Materiais_de_Transporte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Construcao_e_Engenharia"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Maquinas_e_Equipamentos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Material_de_Transporte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Servicos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Transporte"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Comercio_e_Distribuicao_de_Medicamentos_e_Outros_Produtos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Equipamentos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Medicamentos_e_Outros_Produtos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Servicos_Medicos._Hospitalares_e_Diagnosticos"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Construcao_Pesada"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Engenharia_Consultiva"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Produtos_para_Construcao"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Corretoras_de_Seguros_e_Resseguros"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Resseguradoras"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Seguradoras"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Embalagens"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Madeira_e_Papel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Materiais_Diversos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Mineracao"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Quimico"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Siderurgia_e_Metalurgia"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Fertilizantes_e_Defensivos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Petroquimicos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#Quimicos_Diversos"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IEE"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IFNC"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#IMAT"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+

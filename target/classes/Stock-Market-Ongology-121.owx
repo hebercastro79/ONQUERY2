@@ -1,0 +1,2261 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology"
+     versionIRI="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology/1.2.1">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="stock-market-ontology" IRI="http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Ontologia sobre o mercado de ações.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Acao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Acessorios"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Acionista"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Acoes_em_Tesouraria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Acucar_e_Alcool"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aereo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agricultura"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agropecuaria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agua_e_Saneamento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ajuste_de_Avaliacao_Patrimonial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alimentos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alimentos_Diversos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Alimentos_Processados"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Aluguel_de_Carros"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Armas_e_Municoes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artefatos_de_Cobre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artefatos_de_Ferro_e_Aco"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Atividades_Esportivas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ativo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ativo_Circulante"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ativo_Não_Circulante"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Automoveis_e_Motocicletas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bancos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bebidas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bens_Industriais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bicicletas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bolsa_de_Valores"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brazilian_Depositary_Receipt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Brinquedos_e_Jogos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Calcados"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Capital_Social"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Carnes_e_Derivados"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Certificado_de_Deposito_de_Acoes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cervejas_e_Refrigerantes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classe_A"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Classe_B"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Codigo_Negociacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comercio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comercio_de_Eletrodomesticos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comercio_de_Materiais_de_Transporte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comercio_e_Distribuicao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comercio_e_Distribuicao_de_Medicamentos_e_Outros_Produtos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computadores_e_Equipamentos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comunicacoes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Construcao_Civil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Construcao_Pesada"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Construcao_e_Agriculas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Construcao_e_Engenharia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consumo_Ciclico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consumo_Nao_Ciclico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Corretora_de_Valores"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Corretoras_de_Seguros_e_Resseguros"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Debenture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diversos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Eletrodomesticos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Embalagens"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Empresa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Empresa_Capital_Aberto"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Energia_Eletrica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Engenharia_Consultiva"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Equipamentos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Equipamentos_e_Servicos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exploracao._Refino_e_Distribuicao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exploracao_de_Imoveis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exploracao_de_Rodovias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ferroviario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fertilizantes_e_Defensivos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Financeiro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fios_e_Tecidos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gestao_de_Recursos_e_Investimentos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hidroviario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Holdings_Diversificadas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hoteis_e_Restaurantes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hotelaria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Incorporacoes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indice_Amplo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indice_Setorial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Industriais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intermediacao_Imobiliaria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Intermediarios_Financeiros"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Investidor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laticinios"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Madeira"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Madeira_e_Papel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Maquinas_e_Equipamentos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Materiais_Basicos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Materiais_Diversos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material_Aeronautico_e_de_Defesa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material_Rodoviario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Material_de_Transporte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medicamentos_e_Outros_Produtos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Midia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mineracao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Minerais_Metalicos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Motores_Compressores_e_Outros"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moveis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Negociacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Negociado_Em_Diferentes_Pregoes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Negociado_Em_Pregao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ordinaria"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Outros"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Papel_e_Celulose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Passivo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Passivo_Circulante"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Passivo_Não_Circulante"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Patrimonio_Liquido"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Petroleo_Gas_e_Biocombustivel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Petroquimicos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Preferencial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pregao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Prejuizos_Acumulados"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Previdencia_e_Seguros"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Producao_de_Eventos_e_Shows"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Producao_e_Difusao_de_Filmes_e_Programas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produtos_Diversos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produtos_de_Limpeza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produtos_de_Uso_Pessoal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produtos_de_Uso_Pessoal_e_de_Limpeza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Produtos_para_Construcao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Programas_de_Fidelizacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Programas_e_Servicos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Publicidade_e_Propaganda"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quimico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Quimicos_Diversos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reserva_de_Capital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Reserva_de_Lucro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resseguradoras"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Restaurante_e_Similares"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rodoviario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Saude"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Securitizadoras_de_Recebiveis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Seguradoras"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Servicos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Servicos_Diversos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Servicos_Educacionais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Servicos_Financeiros_Diversos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Servicos_Medicos._Hospitalares_e_Diagnosticos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Serviços_de_Apoio_e_Armazenagem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Setor_Atuacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Siderurgia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Siderurgia_e_Metalurgia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sociedade_de_Arrendamento_Mercantil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sociedade_de_Credito_e_Financiamento"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tecidos._Vestuario_e_Calcados"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tecidos._Vestuarios_e_Calcados"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tecnologia_da_Informacao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Telecomunicacoes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transporte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Utensilios_Domesticos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Utilidade_Publica"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Utilidades_Domesticas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Valor_Mobiliario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Valor_Mobiliario_Negociado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Vestuario"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Viagens_e_Lazer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Viagens_e_Turismo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#atuaEm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#defineIndicador"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eListada"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eParteDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#identifica"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#investeEm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#negociado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#negociadoDurante"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#negociadoPregoes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ocorreDurante"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ofereceServicosNegociacao"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#organiza"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#permiteRealizacao"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possuiAtivo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possuiContaInvestimentoEm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possuiParte"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#possuiPassivo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pregaoBase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pregaoPosterior"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#representaConjuntoDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#representaFracao"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#representadoPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temComprador"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temIdentificacao"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temValorMobiliarioNegociado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temVendedor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#envolveQuantidade"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#horarioAbertura"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#horarioFechamento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ocorreEmData"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#possuiValor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#precoAbertura"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#precoFechamento"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#precoMaximo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#precoMedio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#precoMinimo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ticker"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#totalNegocios"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#totalTitulosNegociados"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#variacaoAbsoluta"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#variacaoPercentual"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#volumeNegociacao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#B3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IBovespa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IBrX_100"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IBrX_50"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IEE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IFNC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#IMAT"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Acao"/>
+        <Class IRI="#Valor_Mobiliario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Acessorios"/>
+        <Class IRI="#Tecidos._Vestuarios_e_Calcados"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Acionista"/>
+        <Class IRI="#Investidor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Acionista"/>
+        <ObjectUnionOf>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#investeEm"/>
+                <Class IRI="#Acao"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#investeEm"/>
+                <Class IRI="#Brazilian_Depositary_Receipt"/>
+            </ObjectMinCardinality>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty IRI="#investeEm"/>
+                <Class IRI="#Certificado_de_Deposito_de_Acoes"/>
+            </ObjectMinCardinality>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Acucar_e_Alcool"/>
+        <Class IRI="#Alimentos_Processados"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aereo"/>
+        <Class IRI="#Transporte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agricultura"/>
+        <Class IRI="#Agropecuaria"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agropecuaria"/>
+        <Class IRI="#Consumo_Nao_Ciclico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Agua_e_Saneamento"/>
+        <Class IRI="#Utilidade_Publica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alimentos"/>
+        <Class IRI="#Comercio_e_Distribuicao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alimentos_Diversos"/>
+        <Class IRI="#Alimentos_Processados"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Alimentos_Processados"/>
+        <Class IRI="#Consumo_Nao_Ciclico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Aluguel_de_Carros"/>
+        <Class IRI="#Diversos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Armas_e_Municoes"/>
+        <Class IRI="#Maquinas_e_Equipamentos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Artefatos_de_Cobre"/>
+        <Class IRI="#Siderurgia_e_Metalurgia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Artefatos_de_Ferro_e_Aco"/>
+        <Class IRI="#Siderurgia_e_Metalurgia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Atividades_Esportivas"/>
+        <Class IRI="#Viagens_e_Lazer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ativo_Circulante"/>
+        <Class IRI="#Ativo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ativo_Não_Circulante"/>
+        <Class IRI="#Ativo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Automoveis_e_Motocicletas"/>
+        <Class IRI="#Consumo_Ciclico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bancos"/>
+        <Class IRI="#Intermediarios_Financeiros"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bebidas"/>
+        <Class IRI="#Consumo_Nao_Ciclico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bens_Industriais"/>
+        <Class IRI="#Setor_Atuacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicicletas"/>
+        <Class IRI="#Viagens_e_Lazer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brazilian_Depositary_Receipt"/>
+        <Class IRI="#Valor_Mobiliario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Brinquedos_e_Jogos"/>
+        <Class IRI="#Viagens_e_Lazer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Calcados"/>
+        <Class IRI="#Tecidos._Vestuarios_e_Calcados"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Carnes_e_Derivados"/>
+        <Class IRI="#Alimentos_Processados"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Certificado_de_Deposito_de_Acoes"/>
+        <Class IRI="#Valor_Mobiliario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cervejas_e_Refrigerantes"/>
+        <Class IRI="#Bebidas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Classe_A"/>
+        <Class IRI="#Preferencial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Classe_B"/>
+        <Class IRI="#Preferencial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comercio"/>
+        <Class IRI="#Consumo_Ciclico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comercio_de_Eletrodomesticos"/>
+        <Class IRI="#Comercio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comercio_de_Materiais_de_Transporte"/>
+        <Class IRI="#Bens_Industriais"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comercio_e_Distribuicao"/>
+        <Class IRI="#Consumo_Nao_Ciclico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comercio_e_Distribuicao_de_Medicamentos_e_Outros_Produtos"/>
+        <Class IRI="#Saude"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computadores_e_Equipamentos"/>
+        <Class IRI="#Tecnologia_da_Informacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comunicacoes"/>
+        <Class IRI="#Setor_Atuacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Construcao_Civil"/>
+        <Class IRI="#Consumo_Ciclico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Construcao_Pesada"/>
+        <Class IRI="#Construcao_e_Engenharia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Construcao_e_Agriculas"/>
+        <Class IRI="#Maquinas_e_Equipamentos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Construcao_e_Engenharia"/>
+        <Class IRI="#Bens_Industriais"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consumo_Ciclico"/>
+        <Class IRI="#Setor_Atuacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consumo_Nao_Ciclico"/>
+        <Class IRI="#Setor_Atuacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Corretoras_de_Seguros_e_Resseguros"/>
+        <Class IRI="#Previdencia_e_Seguros"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Debenture"/>
+        <Class IRI="#Valor_Mobiliario"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Diversos"/>
+        <Class IRI="#Consumo_Ciclico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Eletrodomesticos"/>
+        <Class IRI="#Utilidades_Domesticas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Embalagens"/>
+        <Class IRI="#Materiais_Basicos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Empresa"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#atuaEm"/>
+            <Class IRI="#Setor_Atuacao"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Empresa_Capital_Aberto"/>
+        <Class IRI="#Empresa"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Energia_Eletrica"/>
+        <Class IRI="#Utilidade_Publica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Engenharia_Consultiva"/>
+        <Class IRI="#Construcao_e_Engenharia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Equipamentos"/>
+        <Class IRI="#Saude"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Equipamentos_e_Servicos"/>
+        <Class IRI="#Petroleo_Gas_e_Biocombustivel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exploracao._Refino_e_Distribuicao"/>
+        <Class IRI="#Petroleo_Gas_e_Biocombustivel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exploracao_de_Imoveis"/>
+        <Class IRI="#Financeiro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exploracao_de_Rodovias"/>
+        <Class IRI="#Transporte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ferroviario"/>
+        <Class IRI="#Transporte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fertilizantes_e_Defensivos"/>
+        <Class IRI="#Quimico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Financeiro"/>
+        <Class IRI="#Setor_Atuacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fios_e_Tecidos"/>
+        <Class IRI="#Tecidos._Vestuarios_e_Calcados"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gas"/>
+        <Class IRI="#Utilidade_Publica"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gestao_de_Recursos_e_Investimentos"/>
+        <Class IRI="#Servicos_Financeiros_Diversos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hidroviario"/>
+        <Class IRI="#Transporte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Holdings_Diversificadas"/>
+        <Class IRI="#Financeiro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hoteis_e_Restaurantes"/>
+        <Class IRI="#Consumo_Ciclico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hotelaria"/>
+        <Class IRI="#Hoteis_e_Restaurantes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incorporacoes"/>
+        <Class IRI="#Construcao_Civil"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indice_Amplo"/>
+        <Class IRI="#Indice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Indice_Setorial"/>
+        <Class IRI="#Indice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Industriais"/>
+        <Class IRI="#Maquinas_e_Equipamentos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intermediacao_Imobiliaria"/>
+        <Class IRI="#Exploracao_de_Imoveis"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Intermediarios_Financeiros"/>
+        <Class IRI="#Financeiro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laticinios"/>
+        <Class IRI="#Alimentos_Processados"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Madeira"/>
+        <Class IRI="#Madeira_e_Papel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Madeira_e_Papel"/>
+        <Class IRI="#Materiais_Basicos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Maquinas_e_Equipamentos"/>
+        <Class IRI="#Bens_Industriais"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Materiais_Basicos"/>
+        <Class IRI="#Setor_Atuacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Materiais_Diversos"/>
+        <Class IRI="#Materiais_Basicos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material_Aeronautico_e_de_Defesa"/>
+        <Class IRI="#Material_de_Transporte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material_Rodoviario"/>
+        <Class IRI="#Material_de_Transporte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Material_de_Transporte"/>
+        <Class IRI="#Bens_Industriais"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medicamentos_e_Outros_Produtos"/>
+        <Class IRI="#Saude"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Midia"/>
+        <Class IRI="#Comunicacoes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mineracao"/>
+        <Class IRI="#Materiais_Basicos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Minerais_Metalicos"/>
+        <Class IRI="#Mineracao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Motores_Compressores_e_Outros"/>
+        <Class IRI="#Maquinas_e_Equipamentos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moveis"/>
+        <Class IRI="#Utilidades_Domesticas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Negociacao"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#temComprador"/>
+            <Class IRI="#Acionista"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Negociacao"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#temVendedor"/>
+            <Class IRI="#Acionista"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ordinaria"/>
+        <Class IRI="#Acao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Outros"/>
+        <Class IRI="#Setor_Atuacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Papel_e_Celulose"/>
+        <Class IRI="#Madeira_e_Papel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Passivo_Circulante"/>
+        <Class IRI="#Passivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Passivo_Não_Circulante"/>
+        <Class IRI="#Passivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Patrimonio_Liquido"/>
+        <Class IRI="#Passivo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Petroleo_Gas_e_Biocombustivel"/>
+        <Class IRI="#Setor_Atuacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Petroquimicos"/>
+        <Class IRI="#Quimico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Preferencial"/>
+        <Class IRI="#Acao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Previdencia_e_Seguros"/>
+        <Class IRI="#Financeiro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Producao_de_Eventos_e_Shows"/>
+        <Class IRI="#Viagens_e_Lazer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Producao_e_Difusao_de_Filmes_e_Programas"/>
+        <Class IRI="#Midia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produtos_Diversos"/>
+        <Class IRI="#Comercio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produtos_de_Limpeza"/>
+        <Class IRI="#Produtos_de_Uso_Pessoal_e_de_Limpeza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produtos_de_Uso_Pessoal"/>
+        <Class IRI="#Produtos_de_Uso_Pessoal_e_de_Limpeza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produtos_de_Uso_Pessoal_e_de_Limpeza"/>
+        <Class IRI="#Consumo_Nao_Ciclico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Produtos_para_Construcao"/>
+        <Class IRI="#Construcao_e_Engenharia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Programas_de_Fidelizacao"/>
+        <Class IRI="#Diversos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Programas_e_Servicos"/>
+        <Class IRI="#Tecnologia_da_Informacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Publicidade_e_Propaganda"/>
+        <Class IRI="#Midia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quimico"/>
+        <Class IRI="#Materiais_Basicos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Quimicos_Diversos"/>
+        <Class IRI="#Quimico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resseguradoras"/>
+        <Class IRI="#Previdencia_e_Seguros"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Restaurante_e_Similares"/>
+        <Class IRI="#Hoteis_e_Restaurantes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rodoviario"/>
+        <Class IRI="#Transporte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Saude"/>
+        <Class IRI="#Setor_Atuacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Securitizadoras_de_Recebiveis"/>
+        <Class IRI="#Financeiro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Seguradoras"/>
+        <Class IRI="#Previdencia_e_Seguros"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Servicos"/>
+        <Class IRI="#Bens_Industriais"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Servicos_Diversos"/>
+        <Class IRI="#Servicos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Servicos_Educacionais"/>
+        <Class IRI="#Diversos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Servicos_Financeiros_Diversos"/>
+        <Class IRI="#Financeiro"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Servicos_Medicos._Hospitalares_e_Diagnosticos"/>
+        <Class IRI="#Saude"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Serviços_de_Apoio_e_Armazenagem"/>
+        <Class IRI="#Transporte"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Siderurgia"/>
+        <Class IRI="#Siderurgia_e_Metalurgia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Siderurgia_e_Metalurgia"/>
+        <Class IRI="#Materiais_Basicos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sociedade_de_Arrendamento_Mercantil"/>
+        <Class IRI="#Intermediarios_Financeiros"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sociedade_de_Credito_e_Financiamento"/>
+        <Class IRI="#Intermediarios_Financeiros"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tecidos._Vestuario_e_Calcados"/>
+        <Class IRI="#Comercio"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tecidos._Vestuarios_e_Calcados"/>
+        <Class IRI="#Consumo_Ciclico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tecnologia_da_Informacao"/>
+        <Class IRI="#Setor_Atuacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Telecomunicacoes"/>
+        <Class IRI="#Comunicacoes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transporte"/>
+        <Class IRI="#Bens_Industriais"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Utensilios_Domesticos"/>
+        <Class IRI="#Utilidades_Domesticas"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Utilidade_Publica"/>
+        <Class IRI="#Setor_Atuacao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Utilidades_Domesticas"/>
+        <Class IRI="#Consumo_Ciclico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Valor_Mobiliario"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#temIdentificacao"/>
+            <Class IRI="#Codigo_Negociacao"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Vestuario"/>
+        <Class IRI="#Tecidos._Vestuarios_e_Calcados"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Viagens_e_Lazer"/>
+        <Class IRI="#Consumo_Ciclico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Viagens_e_Turismo"/>
+        <Class IRI="#Viagens_e_Lazer"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Acessorios"/>
+        <Class IRI="#Calcados"/>
+        <Class IRI="#Fios_e_Tecidos"/>
+        <Class IRI="#Vestuario"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Acucar_e_Alcool"/>
+        <Class IRI="#Alimentos_Diversos"/>
+        <Class IRI="#Carnes_e_Derivados"/>
+        <Class IRI="#Laticinios"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Aereo"/>
+        <Class IRI="#Exploracao_de_Rodovias"/>
+        <Class IRI="#Ferroviario"/>
+        <Class IRI="#Hidroviario"/>
+        <Class IRI="#Rodoviario"/>
+        <Class IRI="#Serviços_de_Apoio_e_Armazenagem"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Agropecuaria"/>
+        <Class IRI="#Alimentos_Processados"/>
+        <Class IRI="#Bebidas"/>
+        <Class IRI="#Comercio_e_Distribuicao"/>
+        <Class IRI="#Produtos_de_Uso_Pessoal_e_de_Limpeza"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Agua_e_Saneamento"/>
+        <Class IRI="#Energia_Eletrica"/>
+        <Class IRI="#Gas"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Aluguel_de_Carros"/>
+        <Class IRI="#Programas_de_Fidelizacao"/>
+        <Class IRI="#Servicos_Educacionais"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Armas_e_Municoes"/>
+        <Class IRI="#Construcao_e_Agriculas"/>
+        <Class IRI="#Industriais"/>
+        <Class IRI="#Motores_Compressores_e_Outros"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Artefatos_de_Cobre"/>
+        <Class IRI="#Artefatos_de_Ferro_e_Aco"/>
+        <Class IRI="#Siderurgia"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Atividades_Esportivas"/>
+        <Class IRI="#Bicicletas"/>
+        <Class IRI="#Brinquedos_e_Jogos"/>
+        <Class IRI="#Producao_de_Eventos_e_Shows"/>
+        <Class IRI="#Viagens_e_Turismo"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Ativo_Circulante"/>
+        <Class IRI="#Ativo_Não_Circulante"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Automoveis_e_Motocicletas"/>
+        <Class IRI="#Comercio"/>
+        <Class IRI="#Construcao_Civil"/>
+        <Class IRI="#Diversos"/>
+        <Class IRI="#Hoteis_e_Restaurantes"/>
+        <Class IRI="#Tecidos._Vestuarios_e_Calcados"/>
+        <Class IRI="#Utilidades_Domesticas"/>
+        <Class IRI="#Viagens_e_Lazer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bancos"/>
+        <Class IRI="#Sociedade_de_Arrendamento_Mercantil"/>
+        <Class IRI="#Sociedade_de_Credito_e_Financiamento"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bens_Industriais"/>
+        <Class IRI="#Comunicacoes"/>
+        <Class IRI="#Consumo_Ciclico"/>
+        <Class IRI="#Consumo_Nao_Ciclico"/>
+        <Class IRI="#Financeiro"/>
+        <Class IRI="#Materiais_Basicos"/>
+        <Class IRI="#Outros"/>
+        <Class IRI="#Petroleo_Gas_e_Biocombustivel"/>
+        <Class IRI="#Saude"/>
+        <Class IRI="#Tecnologia_da_Informacao"/>
+        <Class IRI="#Utilidade_Publica"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Classe_A"/>
+        <Class IRI="#Classe_B"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Comercio_de_Materiais_de_Transporte"/>
+        <Class IRI="#Construcao_e_Engenharia"/>
+        <Class IRI="#Maquinas_e_Equipamentos"/>
+        <Class IRI="#Material_de_Transporte"/>
+        <Class IRI="#Servicos"/>
+        <Class IRI="#Transporte"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Comercio_e_Distribuicao_de_Medicamentos_e_Outros_Produtos"/>
+        <Class IRI="#Equipamentos"/>
+        <Class IRI="#Medicamentos_e_Outros_Produtos"/>
+        <Class IRI="#Servicos_Medicos._Hospitalares_e_Diagnosticos"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Computadores_e_Equipamentos"/>
+        <Class IRI="#Programas_e_Servicos"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Construcao_Pesada"/>
+        <Class IRI="#Engenharia_Consultiva"/>
+        <Class IRI="#Produtos_para_Construcao"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Corretoras_de_Seguros_e_Resseguros"/>
+        <Class IRI="#Resseguradoras"/>
+        <Class IRI="#Seguradoras"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Embalagens"/>
+        <Class IRI="#Madeira_e_Papel"/>
+        <Class IRI="#Materiais_Diversos"/>
+        <Class IRI="#Mineracao"/>
+        <Class IRI="#Quimico"/>
+        <Class IRI="#Siderurgia_e_Metalurgia"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Equipamentos_e_Servicos"/>
+        <Class IRI="#Exploracao._Refino_e_Distribuicao"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Fertilizantes_e_Defensivos"/>
+        <Class IRI="#Petroquimicos"/>
+        <Class IRI="#Quimicos_Diversos"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Hotelaria"/>
+        <Class IRI="#Restaurante_e_Similares"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Indice_Amplo"/>
+        <Class IRI="#Indice_Setorial"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Madeira"/>
+        <Class IRI="#Papel_e_Celulose"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Material_Aeronautico_e_de_Defesa"/>
+        <Class IRI="#Material_Rodoviario"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Midia"/>
+        <Class IRI="#Telecomunicacoes"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Ordinaria"/>
+        <Class IRI="#Preferencial"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Passivo_Circulante"/>
+        <Class IRI="#Passivo_Não_Circulante"/>
+        <Class IRI="#Patrimonio_Liquido"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Producao_e_Difusao_de_Filmes_e_Programas"/>
+        <Class IRI="#Publicidade_e_Propaganda"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Produtos_de_Limpeza"/>
+        <Class IRI="#Produtos_de_Uso_Pessoal"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Bolsa_de_Valores"/>
+        <NamedIndividual IRI="#B3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Indice_Amplo"/>
+        <NamedIndividual IRI="#IBovespa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Indice_Amplo"/>
+        <NamedIndividual IRI="#IBrX_100"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Indice_Amplo"/>
+        <NamedIndividual IRI="#IBrX_50"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Indice_Setorial"/>
+        <NamedIndividual IRI="#IEE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Indice_Setorial"/>
+        <NamedIndividual IRI="#IFNC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Indice_Setorial"/>
+        <NamedIndividual IRI="#IMAT"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#IBovespa"/>
+        <NamedIndividual IRI="#IBrX_100"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#IBovespa"/>
+        <NamedIndividual IRI="#IBrX_50"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#IBrX_100"/>
+        <NamedIndividual IRI="#IBrX_50"/>
+    </DifferentIndividuals>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="#IEE"/>
+        <NamedIndividual IRI="#IFNC"/>
+        <NamedIndividual IRI="#IMAT"/>
+    </DifferentIndividuals>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#possuiPassivo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#eParteDe"/>
+        <ObjectProperty IRI="#possuiParte"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#identifica"/>
+        <ObjectProperty IRI="#temIdentificacao"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#ocorreDurante"/>
+        <ObjectProperty IRI="#permiteRealizacao"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#identifica"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#pregaoBase"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#pregaoPosterior"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#temIdentificacao"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#atuaEm"/>
+        <Class IRI="#Empresa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#defineIndicador"/>
+        <Class IRI="#Bolsa_de_Valores"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#eListada"/>
+        <Class IRI="#Empresa_Capital_Aberto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#investeEm"/>
+        <Class IRI="#Investidor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#negociado"/>
+        <Class IRI="#Valor_Mobiliario_Negociado"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#negociadoDurante"/>
+        <Class IRI="#Negociado_Em_Pregao"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#negociadoPregoes"/>
+        <Class IRI="#Valor_Mobiliario_Negociado"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ocorreDurante"/>
+        <Class IRI="#Negociacao"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ofereceServicosNegociacao"/>
+        <Class IRI="#Bolsa_de_Valores"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#organiza"/>
+        <Class IRI="#Bolsa_de_Valores"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possuiAtivo"/>
+        <Class IRI="#Empresa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possuiContaInvestimentoEm"/>
+        <Class IRI="#Investidor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possuiParte"/>
+        <Class IRI="#Patrimonio_Liquido"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#possuiPassivo"/>
+        <Class IRI="#Empresa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pregaoBase"/>
+        <Class IRI="#Negociado_Em_Diferentes_Pregoes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pregaoPosterior"/>
+        <Class IRI="#Negociado_Em_Diferentes_Pregoes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#representaConjuntoDe"/>
+        <Class IRI="#Certificado_de_Deposito_de_Acoes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#representaFracao"/>
+        <Class IRI="#Acao"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#representadoPor"/>
+        <Class IRI="#Valor_Mobiliario_Negociado"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temComprador"/>
+        <Class IRI="#Negociacao"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temIdentificacao"/>
+        <Class IRI="#Valor_Mobiliario"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temValorMobiliarioNegociado"/>
+        <Class IRI="#Empresa_Capital_Aberto"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#temVendedor"/>
+        <Class IRI="#Negociacao"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#atuaEm"/>
+        <Class IRI="#Setor_Atuacao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#defineIndicador"/>
+        <Class IRI="#Indice"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#eListada"/>
+        <Class IRI="#Bolsa_de_Valores"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#investeEm"/>
+        <Class IRI="#Valor_Mobiliario"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#negociado"/>
+        <Class IRI="#Negociado_Em_Pregao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#negociadoDurante"/>
+        <Class IRI="#Pregao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#negociadoPregoes"/>
+        <Class IRI="#Negociado_Em_Diferentes_Pregoes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ocorreDurante"/>
+        <Class IRI="#Pregao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ofereceServicosNegociacao"/>
+        <Class IRI="#Corretora_de_Valores"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#organiza"/>
+        <Class IRI="#Pregao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possuiAtivo"/>
+        <Class IRI="#Ativo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possuiContaInvestimentoEm"/>
+        <Class IRI="#Corretora_de_Valores"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possuiParte"/>
+        <Class IRI="#Acoes_em_Tesouraria"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possuiParte"/>
+        <Class IRI="#Ajuste_de_Avaliacao_Patrimonial"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possuiParte"/>
+        <Class IRI="#Capital_Social"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possuiParte"/>
+        <Class IRI="#Prejuizos_Acumulados"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possuiParte"/>
+        <Class IRI="#Reserva_de_Capital"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possuiParte"/>
+        <Class IRI="#Reserva_de_Lucro"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#possuiPassivo"/>
+        <Class IRI="#Passivo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pregaoBase"/>
+        <Class IRI="#Pregao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pregaoPosterior"/>
+        <Class IRI="#Pregao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#representaConjuntoDe"/>
+        <Class IRI="#Acao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#representaFracao"/>
+        <Class IRI="#Capital_Social"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#representadoPor"/>
+        <Class IRI="#Codigo_Negociacao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temComprador"/>
+        <Class IRI="#Acionista"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temIdentificacao"/>
+        <Class IRI="#Codigo_Negociacao"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temValorMobiliarioNegociado"/>
+        <Class IRI="#Valor_Mobiliario_Negociado"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temVendedor"/>
+        <Class IRI="#Acionista"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#ocorreEmData"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#variacaoAbsoluta"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#variacaoPercentual"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#envolveQuantidade"/>
+        <Class IRI="#Negociacao"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#horarioAbertura"/>
+        <Class IRI="#Pregao"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#horarioFechamento"/>
+        <Class IRI="#Pregao"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ocorreEmData"/>
+        <Class IRI="#Pregao"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#possuiValor"/>
+        <Class IRI="#Negociacao"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#precoAbertura"/>
+        <Class IRI="#Negociado_Em_Pregao"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#precoFechamento"/>
+        <Class IRI="#Negociado_Em_Pregao"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#precoMaximo"/>
+        <Class IRI="#Negociado_Em_Pregao"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#precoMedio"/>
+        <Class IRI="#Negociado_Em_Pregao"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#precoMinimo"/>
+        <Class IRI="#Negociado_Em_Pregao"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ticker"/>
+        <Class IRI="#Codigo_Negociacao"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#totalNegocios"/>
+        <Class IRI="#Negociado_Em_Pregao"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#totalTitulosNegociados"/>
+        <Class IRI="#Negociado_Em_Pregao"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#variacaoAbsoluta"/>
+        <Class IRI="#Negociado_Em_Diferentes_Pregoes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#variacaoPercentual"/>
+        <Class IRI="#Negociado_Em_Diferentes_Pregoes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#volumeNegociacao"/>
+        <Class IRI="#Negociado_Em_Pregao"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#envolveQuantidade"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#horarioAbertura"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#horarioFechamento"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ocorreEmData"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#possuiValor"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#precoAbertura"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#precoFechamento"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#precoMaximo"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#precoMedio"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#precoMinimo"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ticker"/>
+        <Datatype abbreviatedIRI="xsd:token"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#totalNegocios"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#totalTitulosNegociados"/>
+        <Datatype abbreviatedIRI="xsd:nonNegativeInteger"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#variacaoAbsoluta"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#variacaoPercentual"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#volumeNegociacao"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Acao</IRI>
+        <Literal>Título que representa parte do capital de uma empresa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Acionista</IRI>
+        <Literal>Investidor que investe em pelo menos um valor mobiliário.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Acoes_em_Tesouraria</IRI>
+        <Literal>Ações que estão sob custódia da empresa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ajuste_de_Avaliacao_Patrimonial</IRI>
+        <Literal>Resultado do valor da avaliação dos bens em relação ao seu valor justo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ativo</IRI>
+        <Literal>Bens e/ou direitos que uma empresa possui.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ativo_Circulante</IRI>
+        <Literal>Bens e direitos que a companhia espera que sejam realizados em até doze meses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ativo_Não_Circulante</IRI>
+        <Literal>Bens e/direitor que a empresa espera receber em prazo superior a 12 meses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bolsa_de_Valores</IRI>
+        <Literal>Ambiente organizado de negociações de valores mobiliários.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Brazilian_Depositary_Receipt</IRI>
+        <Literal>Certificado de depósito de ações emitido no Brasil que representam ações de empresas estrangeiras sem registro no Brasil.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Capital_Social</IRI>
+        <Literal>Recursos integralizados pelos sócios de uma organização.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Certificado_de_Deposito_de_Acoes</IRI>
+        <Literal>Instrumento financeiro que representa a propriedade de um conjunto de ações ordinárias e/ou preferenciais de uma empresa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Classe_A</IRI>
+        <Literal>Ação cujo acionista recebe um mínimo de dividendos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Classe_B</IRI>
+        <Literal>Ação cujo acionista recebe um valor pré-definido de dividendo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Codigo_Negociacao</IRI>
+        <Literal>Símbolo que identifica o título de valor mobiliário.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Corretora_de_Valores</IRI>
+        <Literal>Instituição que faz parte do Sistema Financeiro Nacional que faz a intermediação da compra e da venda de valores mobiliários.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Debenture</IRI>
+        <Literal>Título de dívida emitido por uma empresa que oferece direito de crédito a um investidor junto à empresa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Empresa</IRI>
+        <Literal>Organização econômica que explora um ramo de negócio e oferece ao mercado bens e/ou serviços.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Empresa_Capital_Aberto</IRI>
+        <Literal>Empresa cujo capital social é constituído por ações que podem ser negociadas em uma bolsa de valores.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Energia_Eletrica</IRI>
+        <Literal>Indice que representa empresas que atuam no setor de energia eletrica.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IBovespa</IRI>
+        <Literal>Indice que representa os valores mobiliarios mais importantes do mercado de acoes brasileiro.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IBrX_100</IRI>
+        <Literal>Indice que representa os 100 valores mobiliarios de maior negociabilidade e representatividade do mercado de acoes brasileiro.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IBrX_50</IRI>
+        <Literal>Indice que representa os 50 valores mobiliarios de maior negociabilidade e representatividade do mercado de acoes brasileiro.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IEE</IRI>
+        <Literal>Indice que representa um conjunto de valores mobiliarios de empresas que atuam no setor eletrico.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IFNC</IRI>
+        <Literal>Indice que representa um conjunto de valores mobiliarios de empresas que atuam no setor financeiro.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IMAT</IRI>
+        <Literal>Indice que representa um conjunto de valores mobiliarios de empresas que atuam no setor de materiais basicos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Indice</IRI>
+        <Literal>Indicador formado por um conjunto teorico de valores mobiliarios que reflete o desempenho de um conjunto de ativos relacionados.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Indice_Amplo</IRI>
+        <Literal>Indice que engloba um grande conjunto teorico de valores mobiliarios de diferentes setores.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Indice_Setorial</IRI>
+        <Literal>Indice que engloba um conjunto teorico de valores mobiliarios de um determinado setor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Investidor</IRI>
+        <Literal>Pessoa física ou jurídica que aplica recursos financeiros em valores mobiliários negociados em uma bolsa de valores.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Negociacao</IRI>
+        <Literal>Transacao financeira envolvendo a compra e a venda de um titulo mobiliario.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Negociado_Em_Diferentes_Pregoes</IRI>
+        <Literal>Entidade que representa a negociacao de um mesmo dado valor mobiliário em diferentes pregões.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Negociado_Em_Pregao</IRI>
+        <Literal>Entidade que representa a negociação de um dado valor mobiliário em um pregão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ordinaria</IRI>
+        <Literal>Ação que garante direito de voto ao acionista.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Passivo</IRI>
+        <Literal>Obrigação de uma empresa perante terceiros.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Passivo_Circulante</IRI>
+        <Literal>Obrigação cujo vencimento deve ocorrer em até 12 meses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Passivo_Não_Circulante</IRI>
+        <Literal>Obrigação cujo vencimento deve ocorrer em um prazo superior a 12 meses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Patrimonio_Liquido</IRI>
+        <Literal>Diferença entre ativos e passivos de uma empresa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Preferencial</IRI>
+        <Literal>Ação que indica a preferência ao recebimento de valores pelo acionista.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Pregao</IRI>
+        <Literal>Periodo do dia no qual acontecem as negociacoes de valores mobiliarios.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Prejuizos_Acumulados</IRI>
+        <Literal>Saldo acumulado dos resultados negativos de uma empresa em um determinado período, ainda não totalmente absorvido pelos lucros.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reserva_de_Capital</IRI>
+        <Literal>Recursos obtidos dos acionistas para a formação ou incremento do capital social.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Reserva_de_Lucro</IRI>
+        <Literal>Recursos financeiros obtidos por meio dos lucros da empresa e que ainda não foram distribuídos aos acionistas da empresa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Setor_Atuacao</IRI>
+        <Literal>Setor econômico em que uma empresa pode atuar.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Valor_Mobiliario</IRI>
+        <Literal>Título ou contrato de investimento coletivo que gera direito de participação, de parceria ou remuneração, inclusive resultante da prestação de serviços, cujos rendimentos advém do esforço do empreendedor ou de terceiros.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Valor_Mobiliario_Negociado</IRI>
+        <Literal>Valor mobiliário negociado em uma bolsa de valores.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#atuaEm</IRI>
+        <Literal>Propriedade que indica que uma empresa atua em um dado setor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#defineIndicador</IRI>
+        <Literal>Propriedade que indica que uma bolsa de valores define um conjunto terórico de valores mobiliários.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#eListada</IRI>
+        <Literal>Propriedade que indica que as ações de uma empresa de capital aberto podem ser negociadas em uma dada bolsa de valores.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#eParteDe</IRI>
+        <Literal>Propriedade que existe entre uma parte e seu todo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#envolveQuantidade</IRI>
+        <Literal>Quantidade de um valor mobiliário negociado.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#horarioAbertura</IRI>
+        <Literal>Horário de abertura de um pregão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#horarioFechamento</IRI>
+        <Literal>Horário de fechamento de um pregão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#identifica</IRI>
+        <Literal>Propriedade que indica que código de negociação identifica um ativo.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#investeEm</IRI>
+        <Literal>Propriedade que indica que um investidor investe em valores mobiliários.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#negociado</IRI>
+        <Literal>Propriedade que indica que a negociação de valor mobiliário ocorre em um dado pregão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#negociadoDurante</IRI>
+        <Literal>Período no qual os valores mobiliários foram negociados.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#negociadoPregoes</IRI>
+        <Literal>Propriedade que indica que a negociação de um mesmo valor mobiliário ocorre em diferentes pregões, permitindo calcular a variação no preço deste valor mobiliário.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ocorreDurante</IRI>
+        <Literal>Propriedade que indica que uma negociação ocorre durante um pregão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ocorreEmData</IRI>
+        <Literal>Data na qual um pregão ocorre.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ofereceServicosNegociacao</IRI>
+        <Literal>Propriedade que indica que uma bolsa de valores permite que os clientes de uma corretora de valores realizem negociações durantes os pregões.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#organiza</IRI>
+        <Literal>Propriedade que indica que uma bolsa de valores organiza pregões para permitir a negociação de valores mobiliários.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#permiteRealizacao</IRI>
+        <Literal>Propriedade que indica que o pregão permite a realização de uma negociação envolvendo um dado valor mobiliário.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#possuiAtivo</IRI>
+        <Literal>Propriedade que indica que uma empresa tem bens e/ou direitos que podem ser convertidos em dinheiro ou usados para gerar receitas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#possuiContaInvestimentoEm</IRI>
+        <Literal>Propriedade que indica que um investidor possui um conta de investimentos em uma corretora de valores para permitir que o investidor realize negócios durante um pregão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#possuiParte</IRI>
+        <Literal>Propriedade que existe em um todo e sua parte.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#possuiPassivo</IRI>
+        <Literal>Propriedade que indica que uma empresa possui obrigações financeiras com terceiros.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#possuiValor</IRI>
+        <Literal>Valor acordado em uma negociação envolvendo um valor mobiliário.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#precoAbertura</IRI>
+        <Literal>Preço utilizado como base para o início das negociações do valor mobiliário no pregão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#precoFechamento</IRI>
+        <Literal>Preço do valor mobiliário associado ao último negógio no pregão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#precoMaximo</IRI>
+        <Literal>Maior preço negociado pelo valor mobiliário no pregão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#precoMedio</IRI>
+        <Literal>Preço médio negociado pelo valor mobilário no pregão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#precoMinimo</IRI>
+        <Literal>Menor preço negociado pelo valor mobilário no pregão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pregaoBase</IRI>
+        <Literal>Propriedade que indica o pregão base da negociação de um mesmo valor mobiliário ocorrida em diferentes pregões.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pregaoPosterior</IRI>
+        <Literal>Propriedade que indica o pregão posterior da negociação de um mesmo valor mobiliário ocorrida em diferentes pregões.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#representaConjuntoDe</IRI>
+        <Literal>Propriedade segundo a qual um certificado de depósito de ações representa um certo número de ações de uma empresa listada na bolsa de valores.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#representaFracao</IRI>
+        <Literal>Propriedade que indica que uma ação representa uma fração do capital social de uma empresa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#representadoPor</IRI>
+        <Literal>Propriedade que indica que um dado valor mobiliário negociado em um pregão é representado por um código de negociação.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#temComprador</IRI>
+        <Literal>Propriedade que identifica o investidor que realizou a compra de um valor mobiliário em uma negociação.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#temIdentificacao</IRI>
+        <Literal>Propriedade que indica que um valor mobiliário é identificado por um código de negociação.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#temValorMobiliarioNegociado</IRI>
+        <Literal>Relacionamento que indica que uma empresa de capital aberto tem suas ações e outros valores mobiliários negociados em uma bolsa de valores.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#temVendedor</IRI>
+        <Literal>Propriedade que identifica o investidor que realizou a venda de um valor mobiliário em uma negociação.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ticker</IRI>
+        <Literal>Conjunto de letras e/ou números que identifica um valor mobiliário negociado em uma bolsa de valores.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#totalNegocios</IRI>
+        <Literal>Quantidade total de negócios associados ao valor mobiliário no pregão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#totalTitulosNegociados</IRI>
+        <Literal>Quantidade total de títulos do valor mobiliários negociados no pregão.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#variacaoAbsoluta</IRI>
+        <Literal>Valor da variação absoluta no preço de um valor mobiliário negociado em diferentes pregões.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#variacaoPercentual</IRI>
+        <Literal>Valor da variação percentual ou relativa no preço de um valor mobiliário negociado em diferentes pregões.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#volumeNegociacao</IRI>
+        <Literal>Volume total do valor mobiliário negociado durante o pregão.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.24.2023-01-14T21:28:32Z) https://github.com/owlcs/owlapi -->
+

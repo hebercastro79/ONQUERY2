@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geração de consultas SPARQL a partir de linguagem natural</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .logo {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    #pergunta {
+        width: 100%; /* Altere a largura conforme necessário */
+    }
+    .form-control {
+        font-size: 18px; /* Altere o tamanho da fonte conforme necessário */
+        padding: 10px; /* Altere o valor do padding conforme necessário */
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <img src="/banner_lssb2.png" alt="Banner">
+    <h1>Geração de consultas SPARQL a partir de linguagem natural</h1>
+    <div class="form-group">
+        <label for="pergunta"><h2>Faça sua pergunta:</h2></label>
+        <input type="text" id="pergunta" class="form-control" placeholder="Digite sua pergunta aqui">
+    </div>
+    <!-- Modificação: Adicionando um ID ao botão para manipulação via JavaScript -->
+    <button id="btn-armazenar-pergunta" class="btn">Armazenar Pergunta</button>
+    <div id="perguntas-armazenadas">
+        <!-- Perguntas armazenadas serão exibidas aqui -->
+    </div>
+</div>
+
+<script>
+    document.getElementById('btn-armazenar-pergunta').addEventListener('click', armazenarPergunta);
+
+    function armazenarPergunta() {
+        var pergunta = document.getElementById('pergunta').value;
+
+        // Envia a pergunta para o servidor Flask
+        fetch('/processar_pergunta', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ pergunta: pergunta })
+        })
+        .then(response => response.json())
+        .then(data => {
+            // Exibe a resposta na página HTML
+            document.getElementById('perguntas-armazenadas').innerText = data.resposta;
+        })
+        .catch(error => {
+            console.error('Erro:', error);
+        });
+    }
+</script>
+</body>
+</html>

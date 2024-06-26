@@ -1,0 +1,10 @@
+repositories\InformacoesEmpresasRepository.class
+com\example\Programa_heber\PerguntaRequest.class
+repositories\GenericRepository.class
+com\example\Programa_heber\StockMarketOntology.class
+models\InformacoesEmpresasDb.class
+models\DadosNovosAntDb.class
+repositories\DadosNovosRepository.class
+models\DadosNovosDb.class
+com\example\Programa_heber\Main.class
+repositories\DadosNovosAntRepository.class

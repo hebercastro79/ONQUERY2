@@ -1,0 +1,15 @@
+        //String queryString = "SELECT '#CBAV3F' '#precoAbertura'  " +
+        //        "WHERE { <http://example.com#CBAV3F.> " +
+        //        "?y <http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#precoAbertura> }";
+
+        //String queryString = "SELECT ?x ?y " +
+        //        "WHERE { ?x  <http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#VariacaoAbsoluta> ?y }";
+
+        //String queryString = "SELECT '#PETROBRAS' ?prop ?y '#defineHorarioNegociacao' ?w " +
+        //        "WHERE { <http://example.com#PETROBRAS> ?prop ?y ." +
+        //        "?y <http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#defineHorarioNegociacao> ?w }";
+
+
+        //String queryString = "SELECT ?y " +
+        //        "WHERE { ?x <http://www.semanticweb.org/cleverfarias/ontologies/2023/1/stock-market-ontology#precoAbertura> ?y ." +
+        //        "FILTER(?x = <http://example.com#CBAV3>)}";
