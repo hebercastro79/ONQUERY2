@@ -660,7 +660,7 @@ public class Main {
                                 +
                                 " }";
                 }
-                else if(pergunta.contains("Qual a quantidade de ações do Itaú negociadas no pregão de 05/05/2023?")){
+                else if(pergunta.contains("Qual foi a quantidade de ações do Itau negociadas no pregão de 05/05/2023? ")){
 
                         targetKey = "totalNegociado";
                         pesquisa = "SELECT ?empresa ?valor_mobiliario ?negociado ?pregao ?codigo ?totalNegociado "
@@ -704,7 +704,7 @@ public class Main {
                                 "FILTER (?empresa = <https://dcm.ffclrp.usp.br/lssb/stock-market-ontology#VALE>) ." +
                                 " }";
                 }
-                else if(pergunta.contains("Qual foi o preço mínimo da ação preferencial do Itaú em 05/05/2023?")){
+                else if(pergunta.contains("Qual foi o preço mínimo da ação preferencial do Itau em 05/05/2023? ")){
 
                         targetKey = "precoMinimo";
                         pesquisa = "SELECT ?empresa ?valor_mobiliario ?negociado ?pregao ?codigo ?valor ?acao ?precoMinimo "
@@ -779,7 +779,7 @@ public class Main {
                                 +
                                 " }";
                 }
-                else if(pergunta.contains("Qual foi a variacao intradiaria absoluta da ação da VALE no pregão de 08/05/2023?")){
+                else if(pergunta.contains("Qual foi a variação intradiária absoluta da ação da CSN no pregão de 08/05/2023? ")){
 
                         targetKey = "variacao_intra_abs";
                         pesquisa = "SELECT ?empresa ?valor_mobiliario ?negociado ?pregao ?codigo ?variacao_intra_abs "
@@ -921,7 +921,7 @@ public class Main {
                                 "ORDER BY ASC(?variacaoPercentual)" +
                                 "LIMIT 1";
                 }
-                else if(pergunta.contains("Quais as cinco ações de maior percentual de alta do pregão de 08/05/2023?")){
+                else if(pergunta.contains("Quais as cinco ações de maior percentual de alta no pregão de 08/05/2023?")){
                        
                         targetKey = "codigo";
                         pesquisa = "SELECT ?empresa ?valor_mobiliario ?negociado ?negociadoDiferente ?pregao ?codigo ?variacaoPercentual "
@@ -945,7 +945,7 @@ public class Main {
                                 "ORDER BY DESC(?variacaoPercentual)" +
                                 "LIMIT 5";
                 }
-                else if(pergunta.contains("Quais as cinco ações de maior percentual de baixa do pregão de 08/05/2023?")){
+                else if(pergunta.contains("Quais as cinco ações de maior percentual de baixa no pregão de 08/05/2023?")){
 
                         targetKey = "codigo";
                         pesquisa = "SELECT ?empresa ?valor_mobiliario ?negociado ?negociadoDiferente ?pregao ?codigo ?variacaoPercentual "
